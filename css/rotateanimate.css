@@ -1,0 +1,86 @@
+/* .clip{
+position: relative;
+display: grid;
+place-items: center;
+width: 90px;
+height: 90px;
+}
+.clip img{
+width: 90%;
+height: 90%;
+}
+.clip:before,
+.clip:after{
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 110%;
+height: 110%;
+margin: -5%;
+box-shadow: inset 0 0 0 2px #f7df1c;
+animation: cLipMe 3s Linear infinite;
+}
+.clip:before{
+animation-delay:-1.5s;
+}
+
+@keyframes clipMe {
+    0%, 100% {
+        clip: rect(0px, 220px, 2px, 0px);
+    }
+    25% {
+        clip: rect(0px, 2px, 220px, 0px);
+    }
+    50% {
+        clip: rect(218px, 220px, 220px, 0px);
+    }
+    75% {
+        clip: rect(0px, 220px, 220px, 218px);
+    }
+} */
+
+
+
+.bb {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    background:  no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+    color: #69ca62;
+    box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);
+}
+.bb img{
+    height: 100%;
+    width:100%;
+}
+.bb::before, .bb::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    z-index: -1;
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px #FFD700 ;
+    animation: clipMe 8s linear infinite;
+}
+.bb::before {
+    animation-delay: -4s;
+}
+@keyframes clipMe {
+    0%, 100% {
+        clip: rect(0px, 220px, 2px, 0px);
+    }
+    25% {
+        clip: rect(0px, 2px, 220px, 0px);
+    }
+    50% {
+        clip: rect(218px, 220px, 220px, 0px);
+    }
+    75% {
+        clip: rect(0px, 220px, 220px, 218px);
+    }
+}

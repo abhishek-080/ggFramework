@@ -1,0 +1,70 @@
+.body{
+    padding: 10rem;
+}
+
+/* font sizes */
+
+.f1{
+    font-size: 50px;
+}
+.f3{
+    font-size: 20px;
+}
+
+
+
+/* padding sizes */
+.p1{
+    padding: 50px;
+}
+.p2{
+    padding: 35px;
+}
+.p3{
+    padding:25px;
+}
+.p4{
+    padding: 15px;
+}
+.p5{
+    padding: 5px;
+}
+
+
+
+/* margins */
+    .m1{
+        margin: 50px;
+    }
+    .m2{
+        margin: 35px;
+    }
+    .m3{
+        margin: 25px;
+    }
+
+
+
+/* borders */
+.border{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+/* color slide */
+.linehover {
+    --c: #87CEEB; /* the color */
+    
+    color: black;
+    background: 
+      linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+  }
+  .linehover:hover {
+    --_p: 100%
+  }
+  
